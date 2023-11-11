@@ -1,0 +1,168 @@
+@charset "UTF-8";
+
+/* ========================================================== 
+                            Resets
+========================================================== */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+/* ========================================================== 
+                            Fonts
+========================================================== */
+
+@font-face {
+	font-family: "Roboto";
+	src: url("./../fonts/Roboto-Regular.ttf");
+}
+
+/* ========================================================== 
+                        Body und Wrapper
+========================================================== */
+
+body {
+	font-family: "Roboto";
+	letter-spacing: 2px;
+	background-color: rgba(0, 0, 0, 0.9);
+	scroll-behavior: smooth;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-block: 6vh;
+}
+
+#content {
+	width: 1000px;
+	margin: 0 auto;
+	background-color: rgba(0, 0, 0, 0.8);
+	padding-block: 0 8vh;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	border-radius: 20px;
+	position: relative;
+}
+
+#content div {
+	text-align: center;
+}
+
+#content img {
+	margin-block-start: 10vh;
+	border-radius: 20px;
+	border: none;
+	transition: transform 0.5s ease-in-out;
+}
+
+#content img:hover {
+	transform: scale(1.05);
+}
+
+#content h2 {
+	font-size: 1.2rem;
+	padding-block: 30px 40px;
+	color: rgba(255, 255, 255, 0.75);
+}
+
+button {
+	min-width: 170px;
+	padding: 15px;
+	margin-inline: 10px;
+	margin-block-end: 20px;
+	border: 3px solid white;
+	outline: none;
+	position: relative;
+	background: rgba(0, 0, 0, 0.8);
+	z-index: 0;
+	border-radius: 1.5em;
+	color: white;
+	cursor: pointer;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+button:before, #content:before {
+	content: "";
+	background: linear-gradient(
+		45deg,
+		#ff0000,
+		#ff7300,
+		#fffb00,
+		#48ff00,
+		#00ffd5,
+		#002bff,
+		#7a00ff,
+		#ff00c8,
+		#ff0000
+	);
+	position: absolute;
+	background-size: 400%;
+	top: -2px;
+	left: -2px;
+	width: calc(100% + 4px);
+	height: calc(100% + 4px);
+	border-radius: 1.5em;
+	z-index: -1;
+	filter: blur(5px);
+	animation: glowing 20s linear infinite;
+	transition: opacity 0.3s ease-in-out;
+}
+
+button:after, #content:after {
+	z-index: -1;
+	content: "";
+	position: absolute;
+	left: 0px;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.9);
+	border-radius: 1.5em;
+}
+
+.btnRed:after {
+	background: #790000;
+}
+
+.btnRed:hover:after {
+	background-color: #480000;
+}
+
+.btnGreen:after {
+	background: #187900;
+}
+
+.btnGreen:hover:after {
+	background-color: #0f4a00;
+}
+
+.disabled {
+	pointer-events: none;
+}
+
+@keyframes glowing {
+	0% {
+		background-position: 0 0;
+	}
+	50% {
+		background-position: 400% 0;
+	}
+	100% {
+		background-position: 0 0;
+	}
+}
