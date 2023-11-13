@@ -22,19 +22,19 @@ Dieses JavaScript-Projekt wurde im Rahmen eines Coding-Bootcamps bei supercode.d
 
 2. Quiz-Ausgabe:
 - Für jedes Element in newDataArr:
-- Ein neues Div wird erstellt.
-- Ein Bild und eine Überschrift werden dem Div hinzugefügt.
-- Für jede Wahlmöglichkeit wird ein Button erstellt und dem Div hinzugefügt.
-- Das Div wird dem HTML-Element mit der ID content hinzugefügt.
+    - Ein neues Div wird erstellt.
+    - Ein Bild und eine Überschrift werden dem Div hinzugefügt.
+    - Für jede Wahlmöglichkeit wird ein Button erstellt und dem Div hinzugefügt.
+    - Das Div wird dem HTML-Element mit der ID content hinzugefügt.
 
 3. Antwort-Logik:
 - Für jeden Button in der HTML-Seite:
-- Ein Klick-Ereignis wird hinzugefügt.
-- Überprüfung, ob die ausgewählte Antwort mit der korrekten Antwort übereinstimmt.
-- Falls korrekt, wird dem Button die Klasse btnGreen und disabled hinzugefügt.
-- Falls falsch, wird dem Button die Klasse btnRed und disabled hinzugefügt.
-- Deaktivierung aller anderen Buttons in der gleichen Reihe.
-- Falls falsch, wird dem Button mit der richtigen Antwort die Klasse btnGreen hinzugefügt.
+    - Ein Klick-Ereignis wird hinzugefügt.
+    - Überprüfung, ob die ausgewählte Antwort mit der korrekten Antwort aus dem Array übereinstimmt.
+    - Falls korrekt, wird dem Button die Klasse btnGreen (backgroundcolor: green)und disabled hinzugefügt.
+    - Falls falsch, wird dem Button die Klasse btnRed (backgroundcolor: red) und disabled hinzugefügt.
+    - Deaktivierung aller anderen Buttons in der gleichen Reihe.
+    - Falls falsch, wird dem Button mit der richtigen Antwort die Klasse btnGreen (backgroundcolor: green) hinzugefügt.
 
 4. Ende des Quiz:
 - Das Quiz ist abgeschlossen.
