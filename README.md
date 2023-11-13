@@ -31,7 +31,7 @@ Dieses JavaScript-Projekt wurde im Rahmen eines Coding-Bootcamps bei supercode.d
 - Für jeden Button in der HTML-Seite:
     - Ein Klick-Ereignis wird hinzugefügt.
     - Überprüfung, ob die ausgewählte Antwort mit der korrekten Antwort aus dem Array übereinstimmt.
-    - Falls korrekt, wird dem Button die Klasse btnGreen (backgroundcolor: green)und disabled hinzugefügt.
+    - Falls korrekt, wird dem Button die Klasse btnGreen (backgroundcolor: green) und disabled hinzugefügt.
     - Falls falsch, wird dem Button die Klasse btnRed (backgroundcolor: red) und disabled hinzugefügt.
     - Deaktivierung aller anderen Buttons in der gleichen Reihe.
     - Falls falsch, wird dem Button mit der richtigen Antwort die Klasse btnGreen (backgroundcolor: green) hinzugefügt.
