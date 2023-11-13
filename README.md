@@ -6,7 +6,7 @@ Dieses JavaScript-Projekt wurde im Rahmen eines Coding-Bootcamps bei supercode.d
 
 ### Die Anwendung bietet folgende Möglichkeiten:
 
-- Durchspielen eine Quiz bestehend aus 10 Fragen
+- Durchspielen eines Quiz bestehend aus 10 Fragen
 - Die richtigen und falsch gegebenen Antworten werden anhand der entsprechenden Buttonfarbe angezeigt.
 
 ## Tools/Technologien
@@ -41,7 +41,7 @@ Dieses JavaScript-Projekt wurde im Rahmen eines Coding-Bootcamps bei supercode.d
 
 ## Screenshots
 
-### Flowchart (wird überarbeitet)
+### Flowchart
 ![Flowchart](./assets/images/screenshot_quiz_flowchart.jpg)
 
 ### Ansicht der Webseite
